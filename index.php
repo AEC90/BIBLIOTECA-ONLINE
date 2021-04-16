@@ -31,7 +31,6 @@
         <input name="pesquisar" type="submit"  value="Pesquisar" id="pesquisar">
       </form>
               
-        
         <h1 class="titulo_publicacoes">LIVROS DISPONÍVEIS</h1>
         <div class="publicacoes">
           <div class="container_livro">
