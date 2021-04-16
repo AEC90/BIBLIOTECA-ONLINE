@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --background_color: #ffffff;
+    --accent_color: #1a73e8;
+    --gradient_accent: linear-gradient(to right, #ff0000 , #e60045 );
+    --font: 'Courier New', Courier, monospace;
+}
+
+.form {
+    display: auto;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color:var(--accent_color);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.top{
+    text-align: center;
+    align-content: center;
+
+
+}
+
+.bottom{
+    background-color: #646464;
+}
+
+.bottom table{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    color: #646464;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.top h1{
+    font-family: "Montserrat" ;
+    font-size: 40px;
+}
+
+.inputs{
+    align-content: center;
+}
+
+.inputs select{
+    margin-top: 1em;
+    color: #646464;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    border-radius: 3px;
+    width: 13em;
+    height: 2.4em;
+    font-size: 14px;
+    text-align: center;
+    align-content: center; }
