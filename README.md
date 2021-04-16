@@ -1,2 +1,2 @@
 # BIBLIOTECA-ONLINE
-apenas um repositorio para ver se dá em algo...
+it was a school project, i thought about turn it to something bigger but... may be one day.
