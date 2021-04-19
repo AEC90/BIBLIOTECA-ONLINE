@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Biblioteca Online</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
+    <link type="text/css" linkrel="stylesheet" href="assets/css/styles.css?v=<?php echo time();?>">
     <script src="assets/js/script.js"></script>
 </head>
 <body>
@@ -13,13 +13,13 @@
     <div id="header" title="Biblioteca Online">
              Biblioteca online
     </div>
-
+    <!-- Botão para acessar regisatar -->
     <div id="menu"> 
       <a href="registar.php"><button class="registar_livro">Registar Livro</button></a>
     </div>
+
     <!-- Pequeno form para pesquisa -->
     <div id = "contents">
-     
       <img class="logo" src="assets/img/logo.png">
       <form class="form_pesquisa" name="pesqsuisa" action="" method="POST">
         <h4>PESQUISAR</h4>

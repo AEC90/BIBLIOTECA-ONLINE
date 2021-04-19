@@ -1,66 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-:root{
-    --background_color: #ffffff;
-    --accent_color: #1a73e8;
-    --gradient_accent: linear-gradient(to right, #ff0000 , #e60045 );
-    --font: 'Courier New', Courier, monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.form {
-    display: auto;
-}
-body{
-    font-family: 'Courier New', Courier, monospace;
-    color:var(--accent_color);
-    display: flex;
-    flex-direction: column;
-    
-
+:root {
+  --laranja: #ffbc2c;
+  --azul: #269fb6;
 }
 
-.top{
+body {
+  background-color: whitesmoke;
+  font-family: verdana;
+}
+
+#menu{
+  border: 2px;
+  display: flow-root;
+  width: 100%;  
+  background: var(--azul);
+}
+
+.registar_livro {
+  width: 130px;
+  height: 40px;
+  color: white;
+  background-color: var(--laranja);
+  font-size: 12px;
+  float: right;
+  transition: background .5s ease-in-out;
+}
+
+#header{
+  size: 20px;
+  font-family: monospace;
+  text-align: initial;
+  color: black;
+  background-color: lightgrey;
+}
+
+img.logo{
+  display: block;
+  width: 25%;
+  margin: 20px auto;
+}
+
+form{
+  
+  text-align: center;
+}
+h1{
     text-align: center;
-    align-content: center;
-
-
+}
+.form_registar{
+  display: block;
+  align-content: center;
+}
+/* Formulario */
+input[type=search], input[type=text] {
+  border: 2px solid var(--azul);
+  padding: 8px;
+  border-radius: 2px;
 }
 
-.bottom{
-    background-color: #646464;
+input[type=submit] {
+  width: 130px;
+  height: 40px;
+  color: white;
+  background-color: var(--laranja);
+  border-radius: 2px;
+  font-size: 12px;
+  transition: background .5s ease-in-out;
+}
+input[type=submit]:hover, .registar_livro:hover {
+  background: var(--azul);
+  transition: background .5s ease-in-out;
 }
 
-.bottom table{
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
-    color: #646464;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+h4 {
+  font-size: 2rem;
+  color: var(--azul);
 }
 
-.top h1{
-    font-family: "Montserrat" ;
-    font-size: 40px;
+/* Publicacoes */
+.publicacoes {
+  width: 90%;
+  margin: 3em auto 1em;
 }
 
-.inputs{
-    align-content: center;
+.titulo_publicacoes {
+  background-color: lightgrey;
+  padding: 3px;
 }
 
-.inputs select{
-    margin-top: 1em;
-    color: #646464;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    border: 1px solid transparent;
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
-    border-radius: 3px;
-    width: 13em;
-    height: 2.4em;
-    font-size: 14px;
-    text-align: center;
-    align-content: center; }
+.container_livro {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+.detalhesazul{
+  padding-left: 10px;
+}
+
+.titulo_livro {
+  font-style: italic;
+  color: var(--azul);
+}
+
+.autor_livro {
+  color:white; 
+}
+
+.ler_livro, .baixar_livro {
+  margin-top: 50px;
+  width: 120px;
+  height: 30px;
+  color: white;
+  background-color: var(--azul);
+  transition: background .5s ease-in-out;
+}
+
+.ler_livro:hover, .baixar_livro:hover {
+ background-color: var(--laranja);
+ transition: background .5s ease-in-out; 
+}
+
+.photo_livro {
+  width: 180px;
+  margin-left: 30px;
+}
+
+.l{
+  text-align: center;
+}
+
+/* Footer */
+#footer{
+    clear: both;
+    background: tan;
+     font-family: monospace;
+}
