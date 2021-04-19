@@ -137,8 +137,12 @@ h4 {
 }
 
 /* Footer */
-#footer{
-    clear: both;
-    background: tan;
-     font-family: monospace;
+.footer{
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 0px;
+  float:right;
+  clear: both;
+  background: tan;
+  font-family: monospace;
 }

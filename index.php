@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Biblioteca Online</title>
-    <link type="text/css" linkrel="stylesheet" href="assets/css/styles.css?v=<?php echo time();?>">
+    <link rel="stylesheet" href="assets/css/styles.css?v=<?php echo time();?>">
     <script src="assets/js/script.js"></script>
 </head>
 <body>
@@ -21,27 +21,28 @@
     <!-- Pequeno form para pesquisa -->
     <div id = "contents">
       <img class="logo" src="assets/img/logo.png">
-      <form class="form_pesquisa" name="pesqsuisa" action="" method="POST">
+      <form class="form_pesquisa" name="pesqsuisa" action="index.php" method="POST">
         <h4>PESQUISAR</h4>
         <br>
         <input type="search" name="titulo" placeholder="Digite o titulo do livro" size="70">
         <br><br>
         <input type="search" name="nome" placeholder="ou autor (apelido)" size="70">
         <br><br>
-        <input name="pesquisar" type="submit"  value="Pesquisar" id="pesquisar">
+        <input name="pesquisar" type="submit"  value="clicksearach" id="pesquisar">
       </form>
-              
+      <br>
+                   
         <h1 class="titulo_publicacoes">LIVROS DISPONÍVEIS</h1>
         <div class="publicacoes">
           <div class="container_livro">
               
                 <?php
-                include_once("conexao.php");
+                include("conexao.php");
                 ?>
                 <?php
                  $pesquisar = filter_input (INPUT_POST, 'pesquisar', FILTER_SANITIZE_STRING);
                   /* $pesquisar = $_POST['pesquisar']; */
-                  if($pesquisar){
+                  if($pesquisar=="clicksearach"){
                     
                     $titulo = filter_input (INPUT_POST, 'titulo', FILTER_SANITIZE_STRING);
                     $nome = filter_input (INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
@@ -182,8 +183,8 @@
        
            
       <!-- Rodapé -->          
-      <div id = "footer">
-         @programação web 2019 
+      <div class = "footer">
+         @copyrights reserved to AEC  
       </div>
   </div>
   
