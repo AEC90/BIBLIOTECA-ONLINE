@@ -28,7 +28,7 @@
         <br><br>
         <input type="search" name="nome" placeholder="ou autor (apelido)" size="70">
         <br><br>
-        <input name="pesquisar" type="submit"  value="clicksearach" id="pesquisar">
+        <input name="submit" type="submit"  value="Pesquisar" id="pesquisar">
       </form>
       <br>
                    
@@ -36,13 +36,13 @@
         <div class="publicacoes">
           <div class="container_livro">
               
+               
                 <?php
                 include("conexao.php");
-                ?>
-                <?php
-                 $pesquisar = filter_input (INPUT_POST, 'pesquisar', FILTER_SANITIZE_STRING);
-                  /* $pesquisar = $_POST['pesquisar']; */
-                  if($pesquisar=="clicksearach"){
+                //$pesquisar = filter_input (INPUT_POST, 'pesquisar', FILTER_SANITIZE_STRING);
+                //  $pesquisar = $_POST['pesquisar'];
+                //  echo "$pesquisar";
+                  if(isset($_POST['submit'])){
                     
                     $titulo = filter_input (INPUT_POST, 'titulo', FILTER_SANITIZE_STRING);
                     $nome = filter_input (INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
@@ -94,6 +94,7 @@
                              </form>
                           </div>
                                  <!-- echo '<a id="ler_livro" href ="'.$pdf.'">Ler livro</a><br>'; -->
+                                 
                                <?php
                                  echo "<br>"  ;
                                  echo "<hr>";                
@@ -172,6 +173,7 @@
                       }  
                     } 
                   }
+                  mysqli_close($conn); 
                   ?>
 
                    

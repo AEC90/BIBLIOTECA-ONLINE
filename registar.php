@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Biblioteca Online</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=<?php echo time();?>">
     <script src="/assets/js/script.js"></script>
 </head>
 <body class="container_body">
@@ -16,7 +16,7 @@
   <div class="form_registar">
       <!-- Formulário -->
       <img class="logoic" src="assets/img/logo.png">
-    <form  name="registar" method="POST" action="code.php" enctype="multipart/form-data">
+  <form  name="registar" method="POST" action="code.php" enctype="multipart/form-data">
       <!-- LIVRO -->
       <label class="subTitle">Dados Do Livro</label>
       <!-- INFORMAÇÕES DO LIVRO -->
@@ -44,7 +44,7 @@
       <label style="color:#ffbc2c"><strong>CAPA DO LIVRO:</strong></label>
       <input type="file" required name="fileimg" value = "Capa"><br><br>
       <input class="Carregar" type="submit" name="registar" value="Registar"> <!-- botão -->
-    </form>
+  </form>
   </div>
 </body>
 </html>

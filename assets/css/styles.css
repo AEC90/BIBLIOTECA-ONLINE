@@ -47,16 +47,20 @@ img.logo{
 }
 
 form{
-  
   text-align: center;
 }
 h1{
     text-align: center;
 }
+/*formulário registar*/
 .form_registar{
   display: block;
-  align-content: center;
+  width: 20%;
+  margin: auto;
+  
+  
 }
+
 /* Formulario */
 input[type=search], input[type=text] {
   border: 2px solid var(--azul);
