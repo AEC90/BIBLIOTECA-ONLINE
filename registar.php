@@ -15,30 +15,30 @@
     
   <div class="form_registar">
       <!-- Formulário -->
-      <img class="logoic" src="assets/img/logo.png">
+      <!--<img class="logoic" src="assets/img/logo.png">-->
   <form  name="registar" method="POST" action="code.php" enctype="multipart/form-data">
       <!-- LIVRO -->
       <label class="subTitle">Dados Do Livro</label>
       <!-- INFORMAÇÕES DO LIVRO -->
-      <label>Titulo:</label>
+      <label>Titulo:</label><br>
       <input type="hidden" name="codigo" value ="-1" size="40">
       <input type="text" name="titulo" placeholder="Titulo do livro" size="40">
-      <label>Ano:</label>
+      <label>Ano:</label><br>
       <input type="text" name="ano" placeholder="Ano de publicação (4 digitos)" size="40">
-      <label>Edição:</label>
+      <label>Edição:</label><br>
       <input type="text" name="edicao" placeholder="Edição / Volume" size="40">
-      <label>Biblioteca(s):</label>
+      <label>Biblioteca(s):</label><br>
       <input type="text" name="biblioteca" placeholder="Biblioteca1, biblioteca2" size="40">
-      <label>Descri&ccedil;&atilde;o:</label>
+      <label>Descri&ccedil;&atilde;o:</label><br>
       <input type="text" name="descricao" placeholder="descreva o livro" size="40">
       <!-- Info do autor -->
-      <label class="subTitle">Dados Do Autor</label>
-      <label>Nomes:</label>
+      <label class="subTitle">Dados Do Autor</label><br>
+      <label>Nomes:</label><br>
       <input type="text" name="nome" placeholder="nome sobrenome" size="40">
-      <label>Apelido:</label>
-      <input type="text" name="apelido" placeholder="apelido" size="40">
+      <label>Apelido:</label><br>
+      <input type="text" name="apelido" placeholder="apelido" size="40"><br>
       <!-- Ficheiros -->
-      <label class="subTitle">Ficheiros</label>
+      <label class="subTitle">Ficheiros</label><br>
       <label style="color:#ffbc2c"><strong>LIVRO EM PDF:</strong></label>
       <input type="file" required name="filepdf" value = "Livro">
       <label style="color:#ffbc2c"><strong>CAPA DO LIVRO:</strong></label>
