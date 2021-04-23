@@ -10,7 +10,7 @@
     <script src="/assets/js/script.js"></script>
 </head>
 <?php
-  include_once("conexao.php");//conexão com base de dados
+  include_once("conexao.php");//conexão com base de dados 
   $codigo = filter_input (INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
   $titulo = filter_input (INPUT_POST, 'titulo', FILTER_SANITIZE_STRING);
 	$ano = filter_input (INPUT_POST, 'ano', FILTER_SANITIZE_STRING);
